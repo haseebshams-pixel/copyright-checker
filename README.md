@@ -13,7 +13,7 @@ You will need a google cloud platform key for using youtube data api.
 
 ## Installation
 
-### npm i`
+### `npm i`
 
 Run this command in project terminal to install node modules.
 
