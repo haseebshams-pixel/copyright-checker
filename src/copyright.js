@@ -39,7 +39,7 @@ function CopyRight() {
         url: "https://shazam-core.p.rapidapi.com/v1/tracks/recognize",
         headers: {
           "X-RapidAPI-Key":
-            "f9b933dfdamsh3eadb1f5c999fdcp183f63jsncee1bc18d4ab",
+            "YOUR_API",
           "X-RapidAPI-Host": "shazam-core.p.rapidapi.com",
         },
         data: data,
@@ -58,7 +58,7 @@ function CopyRight() {
                 },
               });
               const res2 = await axios.get(
-                `https://www.googleapis.com/youtube/v3/videos?id=${res?.data?.items[0]?.id?.videoId}&key=AIzaSyBtUrE0bhn8loJ0p-TBr1PNLBCqyNMMGy8&part=snippet,contentDetails,status`
+                `https://www.googleapis.com/youtube/v3/videos?id=${res?.data?.items[0]?.id?.videoId}&key={YOUR_KEY}&part=snippet,contentDetails,status`
               );
               setData(res2?.data?.items[0]);
               setLoader(false);
